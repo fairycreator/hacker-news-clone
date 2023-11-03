@@ -1,10 +1,16 @@
-import { configureStore } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
 import reducer from "./reducer";
 import middleware from "./middleware";
 
-const createStore = (initialState) => {
-  const store = configureStore(reducer, initialState, middleware);
+const generateStore = (initialState) => {
+  const store = configureStore({
+    reducer: reducer,
+    preloadedState: initialState,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware().concat(middleware),
+  });
+
   return store;
 };
 
-export default createStore;
+export default generateStore;
