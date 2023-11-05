@@ -1,5 +1,5 @@
-import hackerNewsApi from "services/hackerNewsApi";
-import { buildRequestCreator } from "store/utils";
+import hackerNewsApi from "../../services/hackerNewsApi";
+import { buildRequestCreator } from "../utils/index";
 
 const NS = "@hackerNewsReader/story";
 
