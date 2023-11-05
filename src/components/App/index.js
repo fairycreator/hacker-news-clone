@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { colorsDark } from "../../styles/palette";
-// import List from "../List";
+import List from "../List";
 import { Wrapper, Title } from "./styles";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <div>
         <Wrapper>
           <Title>Hacker News Reader</Title>
-          {/* <List /> */}
+          <List />
         </Wrapper>
       </div>
     </ThemeProvider>
