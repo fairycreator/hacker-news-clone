@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { ThemeProvider } from "styled-components";
 import InfiniteScroll from "react-infinite-scroll-component";
 // import Nav from "components/Nav";
-// import List from "components/List";
+import List from "../List/index";
 // import Grid from "components/Grid";
 // import Loader from "components/Loader";
 import { layouts, themes } from "../../store/app/utils";
