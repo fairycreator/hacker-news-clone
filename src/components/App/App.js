@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import InfiniteScroll from "react-infinite-scroll-component";
 // import Nav from "components/Nav";
 import List from "../List/index";
-// import Grid from "components/Grid";
+import Grid from "components/Grid";
 // import Loader from "components/Loader";
 import { layouts, themes } from "../../store/app/utils";
 import { colorsDark, colorsLight } from "../../styles/palette";
