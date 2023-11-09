@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import GridItem from "";
+import GridItem from "../GridItem/index";
 import { GridWrapper } from "./styles";
 
 const Grid = ({ stories }) => (
