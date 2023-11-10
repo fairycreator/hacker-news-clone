@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import getSiteHostname from "utils/getSiteHostname";
-import getArticleLink from "utils/getArticleLink";
+import getSiteHostname from "../../utils/getSiteHostname";
+import { getArticleLink } from "../../utils/getArticleLink";
 
 import { Item, Card, Image, Content, Title, Source } from "./styles";
 
