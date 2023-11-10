@@ -4,7 +4,6 @@
  * @param {string} siteUrl - The URL from which to extract the hostname.
  * @returns {string} The extracted hostname.
  */
-
 const getSiteHostname = (siteUrl) => {
   try {
     if (siteUrl) {

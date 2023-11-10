@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import TimeAgo from "react-timeago";
-import getSiteHostname from "utils/getSiteHostname";
-import getArticleLink, { HN_USER, HN_ITEM } from "utils/getArticleLink";
+import getSiteHostname from "../../utils/getSiteHostname";
+import getArticleLink, { HN_USER, HN_ITEM } from "../../utils/getArticleLink";
 
 import {
   Item,
