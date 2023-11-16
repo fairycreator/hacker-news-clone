@@ -1,4 +1,4 @@
-import { actionTypes } from "store/app/actions";
+import { actionTypes } from "../../app/actions";
 
 const BASE_STORAGE_KEY = "@@hackerNewsReader/storage";
 export const THEME_KEY = `${BASE_STORAGE_KEY}/theme`;

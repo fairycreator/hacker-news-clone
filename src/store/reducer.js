@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
-import app from "./app/reducer";
-import story from "./story/reducer";
+import appReducer from "./app/reducer";
+import storyReducer from "./story/reducer";
 
 const rootReducer = combineReducers({
-  app,
-  story,
+  appReducer,
+  storyReducer,
 });
 
 export default rootReducer;

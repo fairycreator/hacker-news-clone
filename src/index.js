@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./components/App";
 import GlobalStyles from "./styles/globals";
 import { Provider } from "react-redux";
-import generateStore from "./store";
+import generateStore from "./store/index";
 import reportWebVitals from "./reportWebVitals";
 
 const store = generateStore(); // Create the store

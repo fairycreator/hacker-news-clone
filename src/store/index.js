@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import reducer from "./reducer";
-import middleware from "./middleware";
+import rootReducer from "./reducer";
+import middleware from "./middleware/index";
 
 const generateStore = (initialState) => {
   const store = configureStore({
-    reducer: reducer,
+    reducer: rootReducer,
     preloadedState: initialState,
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware().concat(middleware),
