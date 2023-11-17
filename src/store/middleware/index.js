@@ -1,7 +1,7 @@
 import { applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 import { createLogger } from "redux-logger";
-import localStorageMiddleware from "store/middleware/localStorageMiddleware";
+import localCache from "./localStorageMiddleware/index";
 import storageDefinitions from "./localStorageMiddleware/storageDefinitions";
 
 const isProd = process.env.NODE_ENV === "production";
@@ -9,7 +9,7 @@ const isProd = process.env.NODE_ENV === "production";
 // Initialize middleware array with mandatory middleware
 const middlewareList = [
   thunk,
-  localStorageMiddleware(storageDefinitions),
+  localCache(storageDefinitions),
   // Include redux-logger only in non-production environments
   ...(!isProd ? [createLogger()] : []),
 ];

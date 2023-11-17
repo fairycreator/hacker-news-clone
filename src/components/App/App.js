@@ -5,7 +5,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Nav from "../Nav/Nav";
 import List from "../List/index";
 import Grid from "../Grid/index";
-import Loader from "components/Loader";
+import Loader from "../Loader/index";
 import { layouts, themes } from "../../store/app/utils";
 import { colorsDark, colorsLight } from "../../styles/palette";
 import { Wrapper, Title, TitleWrapper, GithubLink, SocialLink } from "./styles";
