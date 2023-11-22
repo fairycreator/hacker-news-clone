@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./components/App";
+import AppContainer from "./components/App";
 import GlobalStyles from "./styles/globals";
 import { Provider } from "react-redux";
 import generateStore from "./store/index";
@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <GlobalStyles />
-      <App />
+      <AppContainer />
     </Provider>
   </React.StrictMode>
 );

@@ -3,8 +3,8 @@ import appReducer from "./app/reducer";
 import storyReducer from "./story/reducer";
 
 const rootReducer = combineReducers({
-  appReducer,
-  storyReducer,
+  app: appReducer,
+  story: storyReducer,
 });
 
 export default rootReducer;

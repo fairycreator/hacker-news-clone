@@ -1,4 +1,4 @@
-import { actionTypes } from "./actions";
+import actions from "./actions";
 
 const getInitialState = () => ({
   theme: "dark",
@@ -6,7 +6,7 @@ const getInitialState = () => ({
 
 const appReducer = (state = getInitialState(), { type, payload }) => {
   switch (type) {
-    case actionTypes.SET_THEME:
+    case actions.SET_THEME:
       return {
         ...state,
         theme: payload,
